@@ -36,6 +36,12 @@ const Menu = (props) => {
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
       buyCakeLabel={t('Buy CAKE')}
+      darkLogo="images/Dinger Swap Dark.png"
+      lightLogo="images/Dinger Swap Light.png"
+      desktopLogoWidth="117"
+      desktopLogoHeight="30"
+      mobileLogoWidth="117"
+      mobileLogoHeight="30"
       {...props}
     />
   )
