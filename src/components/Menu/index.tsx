@@ -6,8 +6,8 @@ import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 import config from './config/config'
-import UserMenu from './UserMenu'
-import GlobalSettings from './GlobalSettings'
+// import UserMenu from './UserMenu'
+// import GlobalSettings from './GlobalSettings'
 import { getActiveMenuItem, getActiveSubMenuItem } from './utils'
 import { footerLinks } from './config/footerConfig'
 
@@ -22,8 +22,8 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
-      userMenu={<UserMenu />}
-      globalMenu={<GlobalSettings />}
+      // userMenu={<UserMenu />}
+      // globalMenu={<GlobalSettings />}
       isDark={isDark}
       toggleTheme={toggleTheme}
       currentLang={currentLanguage.code}
@@ -36,6 +36,7 @@ const Menu = (props) => {
       activeItem={activeMenuItem?.href}
       activeSubItem={activeSubMenuItem?.href}
       buyCakeLabel={t('Buy CAKE')}
+      coinImage="images/coin.png"
       darkLogo="images/Dinger Swap Dark.png"
       lightLogo="images/Dinger Swap Light.png"
       desktopLogoWidth="117"
