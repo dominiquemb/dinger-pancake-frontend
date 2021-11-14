@@ -6,7 +6,7 @@ import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import { usePriceCakeBusd } from 'state/farms/hooks'
 import config from './config/config'
-// import UserMenu from './UserMenu'
+import UserMenu from './UserMenu'
 // import GlobalSettings from './GlobalSettings'
 import { getActiveMenuItem, getActiveSubMenuItem } from './utils'
 import { footerLinks } from './config/footerConfig'
@@ -22,7 +22,7 @@ const Menu = (props) => {
 
   return (
     <UikitMenu
-      // userMenu={<UserMenu />}
+      userMenu={<UserMenu />}
       // globalMenu={<GlobalSettings />}
       isDark={isDark}
       toggleTheme={toggleTheme}
